@@ -35,15 +35,15 @@ describe('App', () =>{
     expect(window.fetch).toHaveBeenCalledWith(URL)
   })
 
-  it.skip('should call randomMovie on componentDidMount', () =>{
-    wrapper.instance().componentDidMount();
-    expect(randomMovie).toHaveBeenCalled()
-  })
-
   it('should call fetch with the correct url in gatherTypes', () =>{
     URL = "https://swapi.co/api/planets";
     wrapper.instance().gatherTypes(URL);
     expect(window.fetch).toHaveBeenCalledWith(URL)
+  })
+
+  it.skip('should call randomMovie on componentDidMount', () =>{
+    wrapper.instance().componentDidMount();
+    expect(randomMovie).toHaveBeenCalled()
   })
 
   it.skip('should change state to the correct type in filterByType', () =>{
@@ -59,7 +59,7 @@ describe('App', () =>{
   })
 
   it.skip('should call return a random movie', () =>{
-    random=1;
+    random = 1;
     wrapper.instance().randomMovie("https://swapi.co/api/films")
     expect(wrapper.state().randomMovie).to.equal({"title": "Attack of the Clones",
       "episode_id": 2,

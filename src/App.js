@@ -14,14 +14,19 @@ class App extends Component{
     this.state = {
       cardData: [],
       currentCategory: '',
-      randomMovie: {}
+      randomMovie: {},
+      favorites: []
     }
   }
 
 componentDidMount = () => {
   const url = "https://swapi.co/api/";
   fetchCall(url).then(results => this.gatherTypes(results.people))
-  this.randomMovie("https://swapi.co/api/films")
+  this.randomMovie("https://swapi.co/api/films");
+   const favorited = JSON.parse(localStorage.getItem('Favorites')) || [];
+      this.setState({
+        favorites: favorited,
+      });
 }
 
 
@@ -44,12 +49,36 @@ randomMovie = (url) =>{
   fetchCall(url).then(results => this.setState({randomMovie: results.results[random]}))
 }
 
+addFavorites = (ID, status) => {
+    let newState;
+    if (this.state.favorites.includes(ID) && status === true) {
+      newState = this.state.favorites.filter(card => card !== ID);
+    } else{
+      newState = [...this.state.favorites, ID];
+    this.setState({
+      favorites : newState
+    }, () => {
+      this.saveToStorage();
+    });
+    }
+  }
+
+  saveToStorage = () => {
+    localStorage.setItem('Favorites', JSON.stringify(this.state.favorites));
+  }
+
 
   render(){
     return (
       <div className="App">
       <Header className="header"/>
-      <Container category = {this.state.currentCategory} cards = {this.state.cardData} filterByType = {this.filterByType} />
+      <Container 
+      category = {this.state.currentCategory} 
+      cards = {this.state.cardData} 
+      filterByType = {this.filterByType}
+      favorites = {this.state.favorites}
+      addFavorites = {this.addFavorites}
+/>
       <TextScroll crawl={this.state.randomMovie}/>
     </div>
     );
