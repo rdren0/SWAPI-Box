@@ -1,3 +1,10 @@
+
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 100px 100px 300px;
+}
+
 body{
   background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   color: #ffd700;
@@ -6,38 +13,11 @@ body{
   margin: 0px;
 }
 
-.App {
-  text-align: center;
-  display: grid;
-  grid-template-rows: 100px 100px 300px;
-}
-
-.card-area{
-  height: 275px;
-  width: 750px;
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  overflow: scroll;
-  margin: auto;
-
-}
-
-
-.card{
-  width: 180px;
-  height: 260px;
-  border: 2px solid white;
-  margin: 10px;
-  background-color: black;
-}
-
 .header {
   align-items: center;
   justify-content: center;
   background-image: none;
 }
-
 
 h1{
   font-size: 50px;
@@ -55,7 +35,24 @@ p{
   overflow: hidden;
   text-align: justify;
   margin-left: 45px;
+}
 
+.card-area{
+  height: 275px;
+  width: 750px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: scroll;
+  margin: auto;
+}
+
+.card{
+  width: 180px;
+  height: 260px;
+  border: 2px solid white;
+  margin: 10px;
+  background-color: black;
 }
 
 button{
