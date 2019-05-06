@@ -3,6 +3,11 @@
    
 ![SWAPI-Box](SWAPI-BOX.jpg)
 
+# Result:
+   
+   
+![SWAPI-Box](swapiresult.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
