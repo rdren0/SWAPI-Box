@@ -26,18 +26,17 @@ describe(NavBar, () => {
     const wrapper = shallow(<NavBar/>)
     expect(wrapper).toMatchSnapshot();
   })
-  it.skip('should call filterType with correct params when clicked', () => {
-    wrapper.find('#people').simulate('click');
-    console.log(mockEvent)
-    expect(mockFilterType).toHaveBeenCalledWith(mockPeopleEvent)
+  it('should call filterType with correct params when clicked', () => {
+    wrapper.find('#people').simulate('click', mockPeopleEvent);
+    expect(mockFilterType).toHaveBeenCalledWith('people')
   });
-  it.skip('should call filterType with correct params when clicked', () => {
-    wrapper.find('#planets').simulate('click');
-    expect(mockFilterType).toHaveBeenCalledWith(mockPlanetEvent)
+  it('should call filterType with correct params when clicked', () => {
+    wrapper.find('#planets').simulate('click', mockPlanetEvent);
+    expect(mockFilterType).toHaveBeenCalledWith('planets')
   });
-  it.skip('should call filterType with correct params when clicked', () => {
-    wrapper.find('#vehicles').simulate('click');
-    expect(mockFilterType).toHaveBeenCalledWith(mockVehicleEvent)
+  it('should call filterType with correct params when clicked', () => {
+    wrapper.find('#vehicles').simulate('click',mockVehicleEvent);
+    expect(mockFilterType).toHaveBeenCalledWith('vehicles')
   });
 
 })
