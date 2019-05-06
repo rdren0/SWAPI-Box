@@ -1,33 +1,112 @@
+body{
+  background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  color: #ffd700;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+
 .App {
   text-align: center;
+  display: grid;
+  grid-template-rows: 100px 100px 300px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-area{
+  height: 275px;
+  width: 750px;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: scroll;
+  margin: auto;
+
+}
+
+
+.card{
+  width: 180px;
+  height: 260px;
+  border: 2px solid white;
+  margin: 10px;
+  background-color: black;
+}
+
+.header {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: none;
+}
+
+
+h1{
+  font-size: 50px;
+  margin-top: 10px;
+  display: inline;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h3{
+  margin-top: 5px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  overflow: hidden;
+  text-align: justify;
+  margin-left: 45px;
+
 }
+
+button{
+  border: 2px solid #ffd700;
+  border-radius: 12px;
+  color: white;
+  font-size: 22px;
+  width: 100px;
+  background-color: black;
+  margin: 3px;
+}
+
+button:hover{
+  background-color: gainsboro;
+  color: black;
+}
+
+#titles
+{
+  margin: auto;
+  position: absolute;
+  overflow: hidden;
+  width: 800px;
+  height: 75%;
+  bottom: 0;
+  font-size: 30px;
+  font-weight: bold;
+  transform-origin: 50% 100%;
+  transform: perspective(300px) rotateX(25deg);
+}
+
+#titles:after{
+  position: absolute;
+  content: ' ';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 60%;
+  background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+#titlecontent{
+  position: absolute;
+  top: 100%;
+  animation: scroll 100s linear 4s infinite;
+  padding: auto;
+}
+
+@keyframes scroll {
+  0% { top: 100%; }
+  100% { top: -170%; }
+}
+
