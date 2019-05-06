@@ -30,7 +30,6 @@ componentDidMount = () => {
 }
 
 
-
 gatherTypes = (results) => {
   fetchCall(results).then(results => this.setState({cardData: results.results}))
 }
