@@ -58,7 +58,7 @@ randomMovie = (url) =>{
 
 App.propTypes = {
   cardData: PropTypes.array,
-  randomMovie: PropTypes.object,
+  randomMovie: PropTypes.func,
   currentCategory: PropTypes.string,
  
 }

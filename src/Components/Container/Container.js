@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 const Container = (props) => {
   const cards = props.cards.map(card =>{
-      return <Card {...card} key={card.id} category = {props.category} />
+      return <Card {...card} key={card.name} category = {props.category} />
     })
 
   return(
