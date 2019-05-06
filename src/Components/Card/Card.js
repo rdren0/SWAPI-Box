@@ -12,8 +12,10 @@ class Card extends Component{
     }
 
   componentDidMount = () => {
-      fetchCall(this.props.homeworld)
+    if(this.props.homeworld){
+        fetchCall(this.props.homeworld)
       .then(result => this.setState({homeworld: result}))
+    }
   }
 
   checkStatus = (e) =>{
