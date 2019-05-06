@@ -3,6 +3,7 @@ import Header from './Components/Header/Header.js';
 import Container from './Components/Container/Container.js';
 import TextScroll from './Components/TextScroll/TextScroll.js';
 import { fetchCall } from './fetchcall';
+import PropTypes from 'prop-types';
 import './App.css';
 
 
@@ -53,6 +54,13 @@ randomMovie = (url) =>{
     </div>
     );
   }
+}
+
+App.propTypes = {
+  cardData: PropTypes.array,
+  randomMovie: PropTypes.object,
+  currentCategory: PropTypes.string,
+ 
 }
 
 export default App;

@@ -1,13 +1,13 @@
 import React from 'react';
-import Card from '../Card/Card.js'
-import NavBar from '../NavBar/NavBar.js'
+import Card from '../Card/Card.js';
+import NavBar from '../NavBar/NavBar.js';
+import PropTypes from 'prop-types';
+
 
 const Container = (props) => {
-
   const cards = props.cards.map(card =>{
       return <Card {...card} key={card.id} category = {props.category} />
     })
-
 
   return(
     <div>
@@ -18,6 +18,11 @@ const Container = (props) => {
     </div>
     )
 
+}
+
+Container.propTypes = {
+  props: PropTypes.array,
+ 
 }
 
 export default Container;

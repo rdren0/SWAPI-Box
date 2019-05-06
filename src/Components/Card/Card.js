@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import { fetchCall } from '../../fetchcall';
+import PropTypes from 'prop-types';
+
 
 
 class Card extends Component{
@@ -45,12 +47,12 @@ class Card extends Component{
           <button>Favorite</button>
         </div>)
     }
-
   }
-    
-            // <h4> Residents: {this.props.residents}</h4>
-
-
 }
+
+Card.propTypes = {
+  homeworld: PropTypes.string,
+}
+// <h4> Residents: {this.props.residents}</h4>
 
 export default Card;
