@@ -5,10 +5,20 @@ import PropTypes from 'prop-types';
 
 
 const Container = (props) => {
+  let favoriteStatus;
   const cards = props.cards.map(card =>{
-      return <Card {...card} key={card.name} category = {props.category} />
+    if(props.favorites.includes(card.name)){
+            favoriteStatus =true;
+          }else{
+            favoriteStatus =false; 
+          }
+      return <Card {...card} 
+      key={card.name} 
+      category = {props.category} 
+      status={favoriteStatus}
+      favorites = {props.favorites}
+      addFavorites = {props.addFavorites}/>
     })
-
   return(
     <div>
     <NavBar filterByType = {props.filterByType}/>

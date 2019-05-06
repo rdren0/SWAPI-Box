@@ -70,6 +70,15 @@ button:hover{
   color: black;
 }
 
+.favorited{
+background-color: #ffd700;
+color: black;
+}
+
+.notFavorited{
+  background-color: black;
+}
+
 #titles
 {
   margin: auto;
