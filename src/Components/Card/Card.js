@@ -13,7 +13,7 @@ class Card extends Component{
 
   componentDidMount = () => {
     if(this.props.homeworld){
-        fetchCall(this.props.homeworld)
+      fetchCall(this.props.homeworld)
       .then(result => this.setState({homeworld: result}))
     }
   }
