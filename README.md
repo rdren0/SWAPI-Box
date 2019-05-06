@@ -1,9 +1,12 @@
-# WireFrame:
+# SWAPI-Box:
+Swapi box is a StarWars themed project using react and proptypes with the main goal being complete testing of your application using jest/enzyme.
+
+## WireFrame:
    
    
 ![SWAPI-Box](SWAPI-BOX.jpg)
 
-# Result:
+## Result:
    
    
 ![SWAPI-Box](swapiresult.png)
