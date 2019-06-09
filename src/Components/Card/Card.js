@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import { fetchCall } from '../../fetchcall';
+import { fetchCall } from './../../FetchCall/fetchcall.js';
 import PropTypes from 'prop-types';
-
 
 
 class Card extends Component{
@@ -13,8 +12,7 @@ class Card extends Component{
 
   componentDidMount = () => {
     if(this.props.homeworld){
-      fetchCall(this.props.homeworld)
-      .then(result => this.setState({homeworld: result}))
+      fetchCall(this.props.homeworld).then(result => this.setState({homeworld: result}))
     }
   }
 
@@ -25,49 +23,29 @@ class Card extends Component{
       }
     }
 
-
   render(){
     let button;
-    if(this.props.status === true){
-      button = <button onClick={this.checkStatus} className="favorited">Favorite</button>;
-    }else if (this.props.status === false){
-      button = <button onClick={this.checkStatus} className="notFavorited">Favorite</button>;
-    }
-    let title = <h3>{this.props.name}</h3>;
-    if(this.props.category === "planets"){
-      return( 
-        <div className="card">
-          {title}
-          <hr/>
-          <h6>Terrain: {this.props.terrain}</h6>
-          <h6>Population: {this.props.population}</h6>
-          <h6> Climate: {this.props.climate}</h6>
-          {button}
-        </div>)
-    }else if (this.props.category === "vehicles"){
-       return(
-        <div className="card">
-          {title}
-          <hr/>
-          <h6>Model: {this.props.model}</h6>
-          <h6>Class: {this.props.vehicle_class}</h6>
-          <h6># of Passengers: {this.props.passengers}</h6>
-          {button}
-        </div>)
-    }else{
-      return(
-        <div className="card">
-         {title}
-         <hr/>
-          <h6>Homeworld: {this.state.homeworld.name}</h6>
-          <h6>Population: {this.state.homeworld.population}</h6>
-          <h6> Species: {this.state.homeworld.species}</h6>
-          {button}
-        </div>)
+    this.props.status 
+      ?button = <button onClick={this.checkStatus} className="favorited">Favorite</button>
+      :button = <button onClick={this.checkStatus} className="notFavorited">Favorite</button>;
+
+    return(
+      <div className="card">
+      <h3>{this.props.name}</h3>
+      <hr/>
+      {this.props.terrain && <h6>Terrain: {this.props.terrain}</h6>}
+      {this.props.population && <h6>Population: {this.props.population}</h6>}
+      {this.props.climate && <h6> Climate: {this.props.climate}</h6>}         
+      {this.props.model && <h6>Model: {this.props.model}</h6>}
+      {this.props.vehicle_class && <h6>Class: {this.props.vehicle_class}</h6>}
+      {this.props.passengers && <h6># of Passengers: {this.props.passengers}</h6>}
+      {this.props.homeworld && <h6>Homeworld: {this.state.homeworld.name}</h6>}
+      {this.props.homeworld && <h6>Population: {this.state.homeworld.population}</h6>}
+      {this.props.homeworld && <h6> Species: {this.state.homeworld.species}</h6>}
+      {button}
+      </div>)
     }
   }
-}
-
 Card.propTypes = {
   homeworld: PropTypes.string,
 }

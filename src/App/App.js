@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Header from './Components/Header/Header.js';
-import Container from './Components/Container/Container.js';
-import TextScroll from './Components/TextScroll/TextScroll.js';
-import { fetchCall } from './fetchcall';
+import Header from './../Components/Header/Header.js';
+import Container from './../Components/Container/Container.js';
+import TextScroll from './../Components/TextScroll/TextScroll.js';
+import { fetchCall } from './../FetchCall/fetchcall.js';
 import PropTypes from 'prop-types';
 import './App.css';
 
@@ -15,18 +15,16 @@ class App extends Component{
       cardData: [],
       currentCategory: '',
       randomMovie: {},
-      favorites: []
+      favorites: [],
+      error: ''
     }
   }
 
 componentDidMount = () => {
   const url = "https://swapi.co/api/";
-  fetchCall(url).then(results => this.gatherTypes(results.people))
   this.randomMovie("https://swapi.co/api/films");
    const favorited = JSON.parse(localStorage.getItem('Favorites')) || [];
-      this.setState({
-        favorites: favorited,
-      });
+      this.setState({favorites: favorited});
 }
 
 
@@ -48,23 +46,21 @@ randomMovie = (url) =>{
   fetchCall(url).then(results => this.setState({randomMovie: results.results[random]}))
 }
 
+
 addFavorites = (ID, status) => {
     let newState;
     if (this.state.favorites.includes(ID) && status === true) {
       newState = this.state.favorites.filter(card => card !== ID);
     } else{
       newState = [...this.state.favorites, ID];
-    this.setState({
-      favorites : newState
-    }, () => {
-      this.saveToStorage();
-    });
+    this.setState({favorites : newState}, () => {this.saveToStorage()});
     }
   }
 
-  saveToStorage = () => {
-    localStorage.setItem('Favorites', JSON.stringify(this.state.favorites));
-  }
+
+saveToStorage = () => {
+  localStorage.setItem('Favorites', JSON.stringify(this.state.favorites));
+}
 
 
   render(){

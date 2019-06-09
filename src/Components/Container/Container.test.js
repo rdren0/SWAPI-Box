@@ -7,9 +7,11 @@ import { shallow } from 'enzyme';
 describe(Container, () => {
   let category;
   let cards;
-  let filterByType
+  let filterByType;
+  let mockFavorites;
   beforeEach(() =>{
     filterByType = jest.fn()
+    mockFavorites= ["darth vader"]
     category = "people";
     cards = [{
       "id": 1,
@@ -105,7 +107,7 @@ describe(Container, () => {
   })
   it('should match snapshot with all correct data passed through', () => {
     const wrapper = shallow(
-    <Container category = {category} cards = {cards} filterByType = {filterByType} />)
+    <Container favorites = {mockFavorites} category = {category} cards = {cards} filterByType = {filterByType} />)
     expect(wrapper).toMatchSnapshot();
   })
 })

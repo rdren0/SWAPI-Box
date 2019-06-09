@@ -21,16 +21,19 @@ ShallowWrapper {
       "children": Array [
         <h3 />,
         <hr />,
-        <h6>
-          Homeworld: 
-        </h6>,
-        <h6>
-          Population: 
-        </h6>,
-        <h6>
-           Species: 
-        </h6>,
-        <button>
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        <button
+          className="notFavorited"
+          onClick={[Function]}
+        >
           Favorite
         </button>,
       ],
@@ -58,63 +61,23 @@ ShallowWrapper {
         "rendered": null,
         "type": "hr",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Homeworld: ",
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Homeworld: ",
-          undefined,
-        ],
-        "type": "h6",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Population: ",
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Population: ",
-          undefined,
-        ],
-        "type": "h6",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            " Species: ",
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          " Species: ",
-          undefined,
-        ],
-        "type": "h6",
-      },
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": "Favorite",
+          "className": "notFavorited",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "Favorite",
@@ -132,16 +95,19 @@ ShallowWrapper {
         "children": Array [
           <h3 />,
           <hr />,
-          <h6>
-            Homeworld: 
-          </h6>,
-          <h6>
-            Population: 
-          </h6>,
-          <h6>
-             Species: 
-          </h6>,
-          <button>
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          <button
+            className="notFavorited"
+            onClick={[Function]}
+          >
             Favorite
           </button>,
         ],
@@ -169,63 +135,23 @@ ShallowWrapper {
           "rendered": null,
           "type": "hr",
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Homeworld: ",
-              undefined,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Homeworld: ",
-            undefined,
-          ],
-          "type": "h6",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Population: ",
-              undefined,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Population: ",
-            undefined,
-          ],
-          "type": "h6",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              " Species: ",
-              undefined,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            " Species: ",
-            undefined,
-          ],
-          "type": "h6",
-        },
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": "Favorite",
+            "className": "notFavorited",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "Favorite",
@@ -284,16 +210,19 @@ ShallowWrapper {
       "children": Array [
         <h3 />,
         <hr />,
-        <h6>
-          Homeworld: 
-        </h6>,
-        <h6>
-          Population: 
-        </h6>,
-        <h6>
-           Species: 
-        </h6>,
-        <button>
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        <button
+          className="notFavorited"
+          onClick={[Function]}
+        >
           Favorite
         </button>,
       ],
@@ -321,63 +250,23 @@ ShallowWrapper {
         "rendered": null,
         "type": "hr",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Homeworld: ",
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Homeworld: ",
-          undefined,
-        ],
-        "type": "h6",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Population: ",
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Population: ",
-          undefined,
-        ],
-        "type": "h6",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            " Species: ",
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          " Species: ",
-          undefined,
-        ],
-        "type": "h6",
-      },
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": "Favorite",
+          "className": "notFavorited",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "Favorite",
@@ -395,16 +284,19 @@ ShallowWrapper {
         "children": Array [
           <h3 />,
           <hr />,
-          <h6>
-            Homeworld: 
-          </h6>,
-          <h6>
-            Population: 
-          </h6>,
-          <h6>
-             Species: 
-          </h6>,
-          <button>
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          <button
+            className="notFavorited"
+            onClick={[Function]}
+          >
             Favorite
           </button>,
         ],
@@ -432,63 +324,23 @@ ShallowWrapper {
           "rendered": null,
           "type": "hr",
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Homeworld: ",
-              undefined,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Homeworld: ",
-            undefined,
-          ],
-          "type": "h6",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Population: ",
-              undefined,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Population: ",
-            undefined,
-          ],
-          "type": "h6",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              " Species: ",
-              undefined,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            " Species: ",
-            undefined,
-          ],
-          "type": "h6",
-        },
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": "Favorite",
+            "className": "notFavorited",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "Favorite",
@@ -547,16 +399,19 @@ ShallowWrapper {
       "children": Array [
         <h3 />,
         <hr />,
-        <h6>
-          Homeworld: 
-        </h6>,
-        <h6>
-          Population: 
-        </h6>,
-        <h6>
-           Species: 
-        </h6>,
-        <button>
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        <button
+          className="notFavorited"
+          onClick={[Function]}
+        >
           Favorite
         </button>,
       ],
@@ -584,63 +439,23 @@ ShallowWrapper {
         "rendered": null,
         "type": "hr",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Homeworld: ",
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Homeworld: ",
-          undefined,
-        ],
-        "type": "h6",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Population: ",
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Population: ",
-          undefined,
-        ],
-        "type": "h6",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            " Species: ",
-            undefined,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          " Species: ",
-          undefined,
-        ],
-        "type": "h6",
-      },
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": "Favorite",
+          "className": "notFavorited",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "Favorite",
@@ -658,16 +473,19 @@ ShallowWrapper {
         "children": Array [
           <h3 />,
           <hr />,
-          <h6>
-            Homeworld: 
-          </h6>,
-          <h6>
-            Population: 
-          </h6>,
-          <h6>
-             Species: 
-          </h6>,
-          <button>
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          <button
+            className="notFavorited"
+            onClick={[Function]}
+          >
             Favorite
           </button>,
         ],
@@ -695,63 +513,23 @@ ShallowWrapper {
           "rendered": null,
           "type": "hr",
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Homeworld: ",
-              undefined,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Homeworld: ",
-            undefined,
-          ],
-          "type": "h6",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Population: ",
-              undefined,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Population: ",
-            undefined,
-          ],
-          "type": "h6",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              " Species: ",
-              undefined,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            " Species: ",
-            undefined,
-          ],
-          "type": "h6",
-        },
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": "Favorite",
+            "className": "notFavorited",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "Favorite",

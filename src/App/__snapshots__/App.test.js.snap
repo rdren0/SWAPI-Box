@@ -26,8 +26,10 @@ ShallowWrapper {
           className="header"
         />,
         <Container
+          addFavorites={[Function]}
           cards={Array []}
           category=""
+          favorites={Array []}
           filterByType={[Function]}
         />,
         <TextScroll
@@ -54,8 +56,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "addFavorites": [Function],
           "cards": Array [],
           "category": "",
+          "favorites": Array [],
           "filterByType": [Function],
         },
         "ref": null,
@@ -87,8 +91,10 @@ ShallowWrapper {
             className="header"
           />,
           <Container
+            addFavorites={[Function]}
             cards={Array []}
             category=""
+            favorites={Array []}
             filterByType={[Function]}
           />,
           <TextScroll
@@ -115,8 +121,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "addFavorites": [Function],
             "cards": Array [],
             "category": "",
+            "favorites": Array [],
             "filterByType": [Function],
           },
           "ref": null,

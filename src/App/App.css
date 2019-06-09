@@ -48,7 +48,7 @@ p{
 }
 
 .card{
-  width: 180px;
+  width: 260px;
   height: 260px;
   border: 2px solid white;
   margin: 10px;
@@ -83,7 +83,7 @@ color: black;
 {
   margin: auto;
   position: absolute;
-  left: 300px;
+  left: 320px;
   overflow: hidden;
   width: 800px;
   height: 75%;
@@ -108,7 +108,7 @@ color: black;
 #titlecontent{
   position: absolute;
   top: 100%;
-  animation: scroll 100s linear 4s infinite;
+  animation: scroll 100s linear 1s infinite;
   padding: auto;
 }
 

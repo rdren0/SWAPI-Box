@@ -99,6 +99,11 @@ ShallowWrapper {
       ]
     }
     category="people"
+    favorites={
+      Array [
+        "darth vader",
+      ]
+    }
     filterByType={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -128,6 +133,11 @@ ShallowWrapper {
             created="2014-12-09T13:50:51.644000Z"
             edited="2014-12-20T21:17:56.891000Z"
             eye_color="blue"
+            favorites={
+              Array [
+                "darth vader",
+              ]
+            }
             films={
               Array [
                 "https://swapi.co/api/films/2/",
@@ -156,6 +166,7 @@ ShallowWrapper {
                 "https://swapi.co/api/starships/22/",
               ]
             }
+            status={false}
             url="https://swapi.co/api/people/1/"
             vehicles={
               Array [
@@ -170,6 +181,11 @@ ShallowWrapper {
             created="2014-12-10T15:10:51.357000Z"
             edited="2014-12-20T21:17:50.309000Z"
             eye_color="yellow"
+            favorites={
+              Array [
+                "darth vader",
+              ]
+            }
             films={
               Array [
                 "https://swapi.co/api/films/2/",
@@ -194,6 +210,7 @@ ShallowWrapper {
               ]
             }
             starships={Array []}
+            status={false}
             url="https://swapi.co/api/people/2/"
             vehicles={Array []}
           />
@@ -203,6 +220,11 @@ ShallowWrapper {
             created="2014-12-10T15:11:50.376000Z"
             edited="2014-12-20T21:17:50.311000Z"
             eye_color="red"
+            favorites={
+              Array [
+                "darth vader",
+              ]
+            }
             films={
               Array [
                 "https://swapi.co/api/films/2/",
@@ -228,6 +250,7 @@ ShallowWrapper {
               ]
             }
             starships={Array []}
+            status={false}
             url="https://swapi.co/api/people/3/"
             vehicles={Array []}
           />
@@ -259,6 +282,11 @@ ShallowWrapper {
               created="2014-12-09T13:50:51.644000Z"
               edited="2014-12-20T21:17:56.891000Z"
               eye_color="blue"
+              favorites={
+                Array [
+                  "darth vader",
+                ]
+              }
               films={
                 Array [
                   "https://swapi.co/api/films/2/",
@@ -287,6 +315,7 @@ ShallowWrapper {
                   "https://swapi.co/api/starships/22/",
                 ]
               }
+              status={false}
               url="https://swapi.co/api/people/1/"
               vehicles={
                 Array [
@@ -301,6 +330,11 @@ ShallowWrapper {
               created="2014-12-10T15:10:51.357000Z"
               edited="2014-12-20T21:17:50.309000Z"
               eye_color="yellow"
+              favorites={
+                Array [
+                  "darth vader",
+                ]
+              }
               films={
                 Array [
                   "https://swapi.co/api/films/2/",
@@ -325,6 +359,7 @@ ShallowWrapper {
                 ]
               }
               starships={Array []}
+              status={false}
               url="https://swapi.co/api/people/2/"
               vehicles={Array []}
             />,
@@ -334,6 +369,11 @@ ShallowWrapper {
               created="2014-12-10T15:11:50.376000Z"
               edited="2014-12-20T21:17:50.311000Z"
               eye_color="red"
+              favorites={
+                Array [
+                  "darth vader",
+                ]
+              }
               films={
                 Array [
                   "https://swapi.co/api/films/2/",
@@ -359,6 +399,7 @@ ShallowWrapper {
                 ]
               }
               starships={Array []}
+              status={false}
               url="https://swapi.co/api/people/3/"
               vehicles={Array []}
             />,
@@ -372,11 +413,15 @@ ShallowWrapper {
             "key": "Luke Skywalker",
             "nodeType": "class",
             "props": Object {
+              "addFavorites": undefined,
               "birth_year": "19BBY",
               "category": "people",
               "created": "2014-12-09T13:50:51.644000Z",
               "edited": "2014-12-20T21:17:56.891000Z",
               "eye_color": "blue",
+              "favorites": Array [
+                "darth vader",
+              ],
               "films": Array [
                 "https://swapi.co/api/films/2/",
                 "https://swapi.co/api/films/6/",
@@ -399,6 +444,7 @@ ShallowWrapper {
                 "https://swapi.co/api/starships/12/",
                 "https://swapi.co/api/starships/22/",
               ],
+              "status": false,
               "url": "https://swapi.co/api/people/1/",
               "vehicles": Array [
                 "https://swapi.co/api/vehicles/14/",
@@ -414,11 +460,15 @@ ShallowWrapper {
             "key": "C-3PO",
             "nodeType": "class",
             "props": Object {
+              "addFavorites": undefined,
               "birth_year": "112BBY",
               "category": "people",
               "created": "2014-12-10T15:10:51.357000Z",
               "edited": "2014-12-20T21:17:50.309000Z",
               "eye_color": "yellow",
+              "favorites": Array [
+                "darth vader",
+              ],
               "films": Array [
                 "https://swapi.co/api/films/2/",
                 "https://swapi.co/api/films/5/",
@@ -439,6 +489,7 @@ ShallowWrapper {
                 "https://swapi.co/api/species/2/",
               ],
               "starships": Array [],
+              "status": false,
               "url": "https://swapi.co/api/people/2/",
               "vehicles": Array [],
             },
@@ -451,11 +502,15 @@ ShallowWrapper {
             "key": "R2-D2",
             "nodeType": "class",
             "props": Object {
+              "addFavorites": undefined,
               "birth_year": "33BBY",
               "category": "people",
               "created": "2014-12-10T15:11:50.376000Z",
               "edited": "2014-12-20T21:17:50.311000Z",
               "eye_color": "red",
+              "favorites": Array [
+                "darth vader",
+              ],
               "films": Array [
                 "https://swapi.co/api/films/2/",
                 "https://swapi.co/api/films/5/",
@@ -477,6 +532,7 @@ ShallowWrapper {
                 "https://swapi.co/api/species/2/",
               ],
               "starships": Array [],
+              "status": false,
               "url": "https://swapi.co/api/people/3/",
               "vehicles": Array [],
             },
@@ -509,6 +565,11 @@ ShallowWrapper {
               created="2014-12-09T13:50:51.644000Z"
               edited="2014-12-20T21:17:56.891000Z"
               eye_color="blue"
+              favorites={
+                Array [
+                  "darth vader",
+                ]
+              }
               films={
                 Array [
                   "https://swapi.co/api/films/2/",
@@ -537,6 +598,7 @@ ShallowWrapper {
                   "https://swapi.co/api/starships/22/",
                 ]
               }
+              status={false}
               url="https://swapi.co/api/people/1/"
               vehicles={
                 Array [
@@ -551,6 +613,11 @@ ShallowWrapper {
               created="2014-12-10T15:10:51.357000Z"
               edited="2014-12-20T21:17:50.309000Z"
               eye_color="yellow"
+              favorites={
+                Array [
+                  "darth vader",
+                ]
+              }
               films={
                 Array [
                   "https://swapi.co/api/films/2/",
@@ -575,6 +642,7 @@ ShallowWrapper {
                 ]
               }
               starships={Array []}
+              status={false}
               url="https://swapi.co/api/people/2/"
               vehicles={Array []}
             />
@@ -584,6 +652,11 @@ ShallowWrapper {
               created="2014-12-10T15:11:50.376000Z"
               edited="2014-12-20T21:17:50.311000Z"
               eye_color="red"
+              favorites={
+                Array [
+                  "darth vader",
+                ]
+              }
               films={
                 Array [
                   "https://swapi.co/api/films/2/",
@@ -609,6 +682,7 @@ ShallowWrapper {
                 ]
               }
               starships={Array []}
+              status={false}
               url="https://swapi.co/api/people/3/"
               vehicles={Array []}
             />
@@ -640,6 +714,11 @@ ShallowWrapper {
                 created="2014-12-09T13:50:51.644000Z"
                 edited="2014-12-20T21:17:56.891000Z"
                 eye_color="blue"
+                favorites={
+                  Array [
+                    "darth vader",
+                  ]
+                }
                 films={
                   Array [
                     "https://swapi.co/api/films/2/",
@@ -668,6 +747,7 @@ ShallowWrapper {
                     "https://swapi.co/api/starships/22/",
                   ]
                 }
+                status={false}
                 url="https://swapi.co/api/people/1/"
                 vehicles={
                   Array [
@@ -682,6 +762,11 @@ ShallowWrapper {
                 created="2014-12-10T15:10:51.357000Z"
                 edited="2014-12-20T21:17:50.309000Z"
                 eye_color="yellow"
+                favorites={
+                  Array [
+                    "darth vader",
+                  ]
+                }
                 films={
                   Array [
                     "https://swapi.co/api/films/2/",
@@ -706,6 +791,7 @@ ShallowWrapper {
                   ]
                 }
                 starships={Array []}
+                status={false}
                 url="https://swapi.co/api/people/2/"
                 vehicles={Array []}
               />,
@@ -715,6 +801,11 @@ ShallowWrapper {
                 created="2014-12-10T15:11:50.376000Z"
                 edited="2014-12-20T21:17:50.311000Z"
                 eye_color="red"
+                favorites={
+                  Array [
+                    "darth vader",
+                  ]
+                }
                 films={
                   Array [
                     "https://swapi.co/api/films/2/",
@@ -740,6 +831,7 @@ ShallowWrapper {
                   ]
                 }
                 starships={Array []}
+                status={false}
                 url="https://swapi.co/api/people/3/"
                 vehicles={Array []}
               />,
@@ -753,11 +845,15 @@ ShallowWrapper {
               "key": "Luke Skywalker",
               "nodeType": "class",
               "props": Object {
+                "addFavorites": undefined,
                 "birth_year": "19BBY",
                 "category": "people",
                 "created": "2014-12-09T13:50:51.644000Z",
                 "edited": "2014-12-20T21:17:56.891000Z",
                 "eye_color": "blue",
+                "favorites": Array [
+                  "darth vader",
+                ],
                 "films": Array [
                   "https://swapi.co/api/films/2/",
                   "https://swapi.co/api/films/6/",
@@ -780,6 +876,7 @@ ShallowWrapper {
                   "https://swapi.co/api/starships/12/",
                   "https://swapi.co/api/starships/22/",
                 ],
+                "status": false,
                 "url": "https://swapi.co/api/people/1/",
                 "vehicles": Array [
                   "https://swapi.co/api/vehicles/14/",
@@ -795,11 +892,15 @@ ShallowWrapper {
               "key": "C-3PO",
               "nodeType": "class",
               "props": Object {
+                "addFavorites": undefined,
                 "birth_year": "112BBY",
                 "category": "people",
                 "created": "2014-12-10T15:10:51.357000Z",
                 "edited": "2014-12-20T21:17:50.309000Z",
                 "eye_color": "yellow",
+                "favorites": Array [
+                  "darth vader",
+                ],
                 "films": Array [
                   "https://swapi.co/api/films/2/",
                   "https://swapi.co/api/films/5/",
@@ -820,6 +921,7 @@ ShallowWrapper {
                   "https://swapi.co/api/species/2/",
                 ],
                 "starships": Array [],
+                "status": false,
                 "url": "https://swapi.co/api/people/2/",
                 "vehicles": Array [],
               },
@@ -832,11 +934,15 @@ ShallowWrapper {
               "key": "R2-D2",
               "nodeType": "class",
               "props": Object {
+                "addFavorites": undefined,
                 "birth_year": "33BBY",
                 "category": "people",
                 "created": "2014-12-10T15:11:50.376000Z",
                 "edited": "2014-12-20T21:17:50.311000Z",
                 "eye_color": "red",
+                "favorites": Array [
+                  "darth vader",
+                ],
                 "films": Array [
                   "https://swapi.co/api/films/2/",
                   "https://swapi.co/api/films/5/",
@@ -858,6 +964,7 @@ ShallowWrapper {
                   "https://swapi.co/api/species/2/",
                 ],
                 "starships": Array [],
+                "status": false,
                 "url": "https://swapi.co/api/people/3/",
                 "vehicles": Array [],
               },
